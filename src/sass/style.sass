@@ -1,11 +1,26 @@
 @import "../../node_modules/normalize.css/normalize.css"
-@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+@import "header"
+@import "fonts"
 *
   outline: none
-
+ul
+  margin: 0
+  padding-left: 0
+  li
+    list-style: none
+.container
+  margin: 0 auto
+  @media(min-width: 1200px)
+    max-width: 1200px
+body
+  font-family: 'Lato' , sans-serif
+  font-weight: 400
+  color: #2a2b30
 .mobile-display-none
   @media(max-width: 767px)
     display: none !important
 .desktop-display-none
   @media(min-width: 768px)
     display: none !important
+.flex-wrap
+  display: flex
