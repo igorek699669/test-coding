@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize.css/normalize.css"
 @import "header"
 @import "fonts"
+@import "usp"
 *
   outline: none
 ul
@@ -24,3 +25,23 @@ body
     display: none !important
 .flex-wrap
   display: flex
+.list
+  margin-bottom: 75px
+  li
+    font-size: 20px
+    margin-bottom: 18px
+    &:last-child
+      margin-bottom: 0
+.btn
+  min-width: 183px
+  height: 42px
+  background-color: #3e9cdc
+  font-size: 13px
+  color: #ffffff
+  text-transform: uppercase
+  border: 1px solid #ffffff
+  border-radius: 4px
+  &_white
+    color: #2a2b30
+    border: 1px solid #2a2b30
+    background-color: #ffffff
