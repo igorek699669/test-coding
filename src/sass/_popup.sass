@@ -1,0 +1,140 @@
+.popup-callback
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  z-index: 1111
+  display: none
+  &.active
+    display: block
+  .overlay
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(249, 248, 246, .82)
+  .form-wrapper
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+.confid-popup
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  z-index: 1111
+  overflow-y: scroll
+  display: none
+  &.active
+    display: block
+  .overlay
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+  .header-text
+    margin-bottom: 30px
+    color: #ffffff
+    @media(max-width: 767px)
+      font-size: 20px
+  .confid-wrapper
+    background: linear-gradient(to top,#2c6494 0,#77cef0 99%,#77cef0 100%)
+    padding: 40px
+    border-radius: 10px
+    max-width: 600px
+    position: absolute
+    color: #ffffff
+    left: 50%
+    top: 20%
+    transform: translateX(-50%)
+    @media(max-height: 767px)
+      max-width: 100%
+    &__close
+      position: absolute
+      right: 13px
+      top: 13px
+      cursor: pointer
+
+.popup-thankyou
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  z-index: 1111
+  overflow-y: scroll
+  display: none
+  &.active
+    display: block
+  .overlay
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+  .thankyou-wrapper
+    position: absolute
+    background-color: #CDCDCE
+    background-image: url("../img/usp-inner-back.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    left: 50%
+    top: 10%
+    transform: translateX(-50%)
+    max-width: 1160px
+    width: 100%
+    padding-top: 140px
+    padding-bottom: 48px
+    @media(max-width: 850px)
+      padding-top: 50px
+      padding-bottom: 400px
+      background-image: url("../img/usp-back-mobile.png")
+    &__close
+      position: absolute
+      top: 30px
+      right: 35px
+      @media(max-width: 850px)
+        top: 15px
+        right: 20px
+    .inner-wrapper
+      padding-left: 580px
+      text-align: center
+      @media(max-width: 1150px)
+        padding-left: 380px
+      @media(max-width: 850px)
+        padding-left: 0
+      &__logo
+        display: block
+        margin: 0 auto
+        margin-bottom: 70px
+        @media(max-width: 850px)
+          margin-bottom: 20px
+      &__checkgreen
+        display: block
+        margin: 0 auto
+        margin-bottom: 20px
+      &__subhead-text
+        color: #000000
+        font-size: 28px
+        font-weight: 300
+        text-align: center
+        margin-bottom: 108px
+        @media(max-width: 850px)
+          font-weight: 500
+          font-size: 18px
+          margin-bottom: 10px
+      &__head-text
+        text-align: center
+        color: #c9211c
+        font-size: 45px
+        font-weight: 700
+        line-height: 48px
+        @media (max-width: 850px)
+          font-size: 25px
+          line-height: 30px

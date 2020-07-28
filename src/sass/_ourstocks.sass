@@ -1,0 +1,58 @@
+.ourstocks-section
+  padding-top: 70px
+  padding-bottom: 100px
+  background-image: url("../img/stocks-back.png")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  @media(max-width: 767px)
+    padding-top: 79px
+    padding-bottom: 59px
+  .checkbox-wrapper__text
+    @media(max-width: 991px)
+      white-space: normal
+  .form-wrapper
+    margin-left: auto
+    &__head-text
+      @media(max-width: 991px)
+        font-size: 23px
+      @media(max-width: 767px)
+        font-size: 15px
+  .header-text
+    margin-bottom: 63px
+    @media(max-width: 767px)
+      margin-bottom: 33px
+.stock-item
+  padding-top: 23px
+  padding-bottom: 20px
+  background-color: #afdaf6
+  background-image: linear-gradient(to top, #4f83b0 0%, #93d0e8 99%, #93d0e8 100%)
+  text-align: center
+  margin-bottom: 82px
+  transition: .5s
+  @media(max-width: 767px)
+    margin-bottom: 39px
+  &:hover
+    box-shadow: 0 2px 3px 1px rgba(35, 44, 50, 0.45)
+  &:last-child
+    margin-bottom: 0
+    @media(max-width: 767px)
+      margin-bottom: 60px
+  &__head-text
+    color: #fffefe
+    font-size: 24px
+    font-weight: 500
+    line-height: 27.63px
+    text-transform: uppercase
+    @media(max-width: 767px)
+      font-size: 13px
+      line-height: 15px
+    &_black
+      color: #000000
+      display: block
+  &__subhead-text
+    color: #28201e
+    font-weight: 500
+    font-size: 18px
+    @media(max-width: 767px)
+      font-size: 10px

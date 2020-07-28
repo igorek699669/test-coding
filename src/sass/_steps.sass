@@ -1,0 +1,99 @@
+.steps-section
+  padding-top: 130px
+  padding-bottom: 160px
+  background-color: #2a4f86
+  @media(max-width: 767px)
+    padding-top: 68px
+    padding-bottom: 44px
+  background-image: linear-gradient(-210deg, #f9f8f6 0%, #e9f0f6 100%)
+  .header-text
+    margin-bottom: 133px
+    @media(max-width: 767px)
+      font-size: 24px
+      margin-bottom: 28px
+.steps-slider-wrapper
+  position: relative
+  &__left-arrow
+    position: absolute
+    left: -5px
+    top: 50%
+    transform: translateY(-50%)
+  &__right-arrow
+    position: absolute
+    right: -5px
+    top: 50%
+    transform: translateY(-50%)
+.steps-item
+  position: relative
+  box-shadow: 0 15px 22px 2px rgba(3, 3, 3, 0.17)
+  background-color: #ffffff
+  height: 380px
+  @media(max-width: 991px)
+    margin-bottom: 20px
+  @media(max-width: 767px)
+    max-width: 247px
+    margin: 0 auto
+    margin-bottom: 40px
+  &:not(.first-step)
+    .image
+      @media(max-width: 991px)
+        width: 100%
+        position: relative
+        img
+          position: absolute
+          width: 100%
+          height: 100%
+          object-fit: cover
+  &.first-step
+    padding-bottom: 40px
+    padding-top: 203px
+    height: auto
+    text-align: center
+    .btn
+      width: 182px
+      height: 37px
+      color: #ffffff
+      font-size: 9px
+      font-weight: 500
+      text-transform: uppercase
+    .steps-item__subhead-text
+      max-width: 200px
+      margin: 0 auto
+      margin-bottom: 27px
+    .image
+      height: auto
+      position: absolute
+      top: 26px
+      margin-bottom: 0
+      img
+        max-width: none
+
+  .image
+    height: 215px
+    margin-bottom: 18px
+    img
+      max-width: 100%
+  &__number
+    position: absolute
+    top: 12px
+    left: 0
+    width: 29px
+    height: 43px
+    border-radius: 0 21px 21px 0
+    background-color: #ff0014
+    color: #ffffff
+    padding-top: 14px
+    padding-left: 9px
+    font-size: 18px
+    font-weight: 500
+  &__head-text
+    color: #020202
+    text-align: center
+    font-size: 22px
+    font-weight: 300
+    margin-bottom: 33px
+  &__subhead-text
+    color: #020202
+    text-align: center
+    font-size: 13px
+    font-weight: 300

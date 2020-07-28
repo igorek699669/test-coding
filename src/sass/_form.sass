@@ -1,0 +1,134 @@
+.form-wrapper
+  padding-top: 59px
+  padding-bottom: 59px
+  padding-left: 55px
+  padding-right: 55px
+  box-shadow: 0 2px 3px 1px rgba(35, 44, 50, 0.45)
+  background-color: #041302
+  background-image: linear-gradient(to top, #2c6494 0%, #77cef0 99%, #77cef0 100%)
+  max-width: 400px
+  position: relative
+  @media(max-width: 767px)
+    padding: 36px
+    text-align: center
+    max-width: 265px
+    margin-right: auto
+  &__close
+    position: absolute
+    top: 13px
+    right: 12px
+    cursor: pointer
+  .input-wrapper
+    margin-bottom: 18px
+    &.last
+      margin-bottom: 41px
+      @media(max-width: 767px)
+        margin-bottom: 25px
+  .btn
+    @media(max-width: 767px)
+      width: 181px
+      height: 37px
+      font-size: 9px
+  &__head-text
+    font-size: 24px
+    text-transform: uppercase
+    color: #ffffff
+    font-weight: 500
+    text-align: center
+    max-width: 255px
+    margin: 0 auto
+    margin-bottom: 28px
+    @media(max-width: 767px)
+      font-size: 15px
+      max-width: 160px
+      margin-bottom: 17px
+    &_small
+      font-size: 18px
+      text-transform: none
+      @media(max-width: 767px)
+        font-size: 11px
+.input-wrapper
+  position: relative
+  @media(max-width: 767px)
+    text-align: center
+    max-width: 182px
+    margin: 0 auto
+  &__img
+    position: absolute
+    left: 19px
+    top: 50%
+    transform: translateY(-50%)
+    @media(max-width: 767px)
+      max-width: 13px
+  &__input
+    width: 100%
+    max-width: 289px
+    height: 58px
+    box-shadow: inset 0 4px 3px rgba(1, 32, 3, 0.04)
+    border-radius: 5px
+    background-color: #eaeaea
+    border: none
+    color: #646262
+    font-weight: 300
+    padding-left: 52px
+    font-size: 13px
+    @media(max-width: 767px)
+      max-width: 182px
+      height: 37px
+      font-size: 8px
+.checkbox-wrapper
+  position: relative
+  display: block
+  &__checkbox
+    position: absolute
+    z-index: -1111
+    left: -9999px
+    &:checked + .checkbox-wrapper__text:after
+      opacity: 1
+  &__text
+    margin-left: 34px
+    color: #fefefe
+    font-size: 9px
+    font-weight: 300
+    margin-top: 37px
+    white-space: nowrap
+    @media(max-width: 767px)
+      margin-top: 19px
+      font-size: 5px
+      text-align: left
+      margin-left: 42px
+    &:before
+      content: ''
+      box-shadow: inset 0 4px 3px rgba(1, 32, 3, 0.04)
+      border-radius: 5px
+      background-color: #eaeaea
+      width: 20px
+      height: 17px
+      position: absolute
+      left: 0
+      top: -7px
+      @media(max-width: 767px)
+        top: -3
+        left: 20px
+        width: 12px
+        height: 11px
+    &:after
+      content: ''
+      background-image: url("../img/checked.png")
+      width: 15px
+      height: 10px
+      left: 4px
+      top: -3px
+      position: absolute
+      opacity: 0
+      @media(max-width: 767px)
+        top: -4px
+        left: 22px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        width: 9px
+        height: 6px
+    a
+      color: inherit
+      text-decoration: underline
