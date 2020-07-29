@@ -26,7 +26,7 @@ gulp.task("styles", function () {
 		.pipe(browserSync.stream())
 });
 gulp.task('scripts',function () {
-   return gulp.src('src/js/*.js',{since: gulp.lastRun('scripts')})
+   return gulp.src('src/js/**/*.js',{since: gulp.lastRun('scripts')})
        .pipe(babel({
            presets: ['@babel/env']
         }))

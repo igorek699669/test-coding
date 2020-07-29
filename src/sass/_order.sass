@@ -5,6 +5,7 @@
 .steps-container
   display: flex
   justify-content: space-between
+  margin-bottom: 80px
 .step-item
   .image
     border: 4px solid #286690
@@ -26,7 +27,11 @@
       left: 127px
       margin-bottom: 77px
       &_2
-        left: 140px
+        left: 135px
+      &_3
+        left: 121px
+      &_4
+        left: 121px
       &__dot
         background-color: #bbbbbb
         width: 6px
@@ -39,4 +44,146 @@
     color: #ffffff
     text-align: center
     font-size: 16px
+.form-container
+  .btn
+    width: 370px
+    height: 48px
+    font-size: 15px
+    font-weight: 600
+    display: block
+    margin: 0 auto
 
+.fields-container
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 50px
+.select-wrapper
+  width: 100%
+  max-width: 370px
+  position: relative
+  margin-bottom: 32px
+  &.active
+    .select-opened
+      display: block
+      box-sizing: border-box
+    .select
+      background-color: #3d4050
+      border: 1px solid #3d4050
+      .image
+        color: #ffffff
+      &__text
+        color: #ffffff
+.select
+  background-color: #dfdfe1
+  border-radius: 3px
+  padding-left: 16px
+  padding-right: 18px
+  border: 1px solid #ffffff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 48px
+  cursor: pointer
+  &__text
+    font-size: 18px
+    color: #272733
+.select-opened
+  position: absolute
+  display: none
+  z-index: 111
+  height: 230px
+  width: 100%
+  border-radius: 0px 0px 3px 3px
+  border: 1px solid #3d4050
+  background-color: rgba(39 , 39, 51 , .9 )
+  .simplebar-scrollbar
+    background-color: #3e9cdc
+    border-radius: 3px
+  .simplebar-track
+    background-color: #3d4050
+    height: calc(100% - 6px)
+    border-radius: 3px
+    top: 3px
+    width: 7px
+  &__text
+    font-size: 18px
+    color: #ffffff
+    padding-left: 16px
+    padding-top: 13px
+    padding-bottom: 13px
+    padding-right: 16px
+    background-color: transparent
+    cursor: pointer
+    &:hover
+      color: #42a9ed
+.input
+  width: 100%
+  max-width: 370px
+  height: 48px
+  display: flex
+  input
+    background-color: #dfdfe1
+    border-radius: 3px
+    padding-left: 16px
+    padding-right: 18px
+    border: 1px solid #ffffff
+    font-size: 18px
+    color: #272733
+    width: 100%
+    height: 100%
+.rangeSlider-wrapper
+  max-width: 770px
+  flex: 0 0 70%
+  .noUi-horizontal
+    height: 6px
+    .noUi-handle
+      width: 24px
+      height: 24px
+      background-color: #42a9ed
+      border-radius: 100%
+      border: 3px solid #286690
+      box-shadow: none
+      top: -10px
+      &:after
+        display: none
+      &:before
+        display: none
+  .noUi-connects
+    height: 6px
+    background-color: #bfbfc2
+    border-radius: 3px
+    border: 1px solid #ffffff
+  .top-line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 29px
+    &__text
+      font-size: 18px
+      color: #ffffff
+    &__percents
+      color: #ffffff
+      font-size: 18px
+      font-weight: 600
+.attach-wrapper
+  background-color: #ffffff
+  border-radius: 3px
+  font-size: 15px
+  text-transform: uppercase
+  font-weight: 600
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 370px
+  width: 100%
+  border: 2px solid #3e9cdc
+  box-sizing: border-box
+  cursor: pointer
+  i
+    font-size: 20px
+    margin-right: 17px
+  input
+    position: absolute
+    left: -9999px
+    z-index: -9999

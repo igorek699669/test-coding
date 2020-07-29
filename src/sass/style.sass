@@ -3,6 +3,12 @@
 @import "fonts"
 @import "usp"
 @import "order"
+@import "variables"
+@import "../../node_modules/nouislider/distribute/nouislider.min.css"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid"
+@import "../../node_modules/simplebar/dist/simplebar.min.css"
+
 *
   outline: none
 ul
@@ -13,7 +19,7 @@ ul
 .container
   margin: 0 auto
   @media(min-width: 1200px)
-    max-width: 1200px
+    max-width: 1170px
 body
   font-family: 'Lato' , sans-serif
   font-weight: 400
@@ -54,6 +60,7 @@ body
   text-transform: uppercase
   border: 1px solid #ffffff
   border-radius: 4px
+  cursor: pointer
   &_white
     color: #2a2b30
     border: 1px solid #2a2b30
