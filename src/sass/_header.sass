@@ -7,6 +7,7 @@
   .flex-wrap
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
 .logo
   &__text
     color: #ffffff
@@ -17,10 +18,15 @@
 ._blue
   color: #42a9ed
 .main-menu-wrap
+  @media(max-width: 767px)
+    flex: 0 0 100%
+    margin-top: 20px
   ul
     display: flex
     li
       margin-right: 58px
+      @media (max-width: 991px)
+        margin-right: 20px
       &:last-child
         margin-right: 0
       a
@@ -30,5 +36,9 @@
         text-decoration: none
         text-transform: uppercase
         cursor: pointer
+        @media(max-width: 991px)
+          font-size: 14px
+        @media(max-width: 767px)
+          font-size: 12px
         &:hover
           color: #43abf0

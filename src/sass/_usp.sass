@@ -5,8 +5,15 @@
   background-repeat: no-repeat
   background-position: center
   background-size: cover
+  @media(max-width: 767px)
+    padding-top: 200px
+    padding-bottom: 80px
   .btn
     margin-right: 27px
+    @media(max-width: 767px)
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
 .usp-header
   color: #272733
   line-height: 64px
@@ -15,6 +22,10 @@
   max-width: 740px
   margin-bottom: 75px
   text-transform: uppercase
+  @media(max-width: 767px)
+    font-size: 24px
+    line-height: 32px
+    margin-bottom: 30px
 .usp-subheader
   font-weight: 700
   font-size: 20px

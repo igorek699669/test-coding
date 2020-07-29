@@ -2,11 +2,26 @@
   background-color: #272733
   padding-top: 120px
   padding-bottom: 148px
+  background-image: url("../img/map.png")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  @media(max-width: 767px)
+    padding-top: 60px
+    padding-bottom: 60px
 .steps-container
   display: flex
   justify-content: space-between
   margin-bottom: 80px
+  @media(max-width: 767px)
+    flex-wrap: wrap
 .step-item
+  @media(max-width: 767px)
+    flex: 0 0 100%
+    text-align: center
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
   .image
     border: 4px solid #286690
     border-radius: 100%
@@ -26,6 +41,8 @@
       transform: translateY(-50%)
       left: 127px
       margin-bottom: 77px
+      @media(max-width: 1199px)
+        display: none
       &_2
         left: 135px
       &_3
@@ -52,7 +69,8 @@
     font-weight: 600
     display: block
     margin: 0 auto
-
+    @media(max-width: 767px)
+      width: 100%
 .fields-container
   display: flex
   justify-content: space-between
@@ -63,6 +81,13 @@
   max-width: 370px
   position: relative
   margin-bottom: 32px
+  @media(max-width: 1199px)
+    max-width: 310px
+  @media(max-width: 991px)
+    max-width: 355px
+  @media(max-width: 767px)
+    margin: 0 auto
+    margin-bottom: 32px
   &.active
     .select-opened
       display: block
@@ -122,6 +147,13 @@
   max-width: 370px
   height: 48px
   display: flex
+  @media(max-width: 1199px)
+    max-width: 310px
+  @media(max-width: 991px)
+    max-width: 355px
+  @media(max-width: 767px)
+    margin: 0 auto
+    margin-bottom: 32px
   input
     background-color: #dfdfe1
     border-radius: 3px
@@ -135,6 +167,15 @@
 .rangeSlider-wrapper
   max-width: 770px
   flex: 0 0 70%
+  @media(max-width: 1199px)
+    max-width: 635px
+  @media(max-width: 991px)
+    max-width: 355px
+    flex: 0 0 355px
+  @media(max-width: 767px)
+    max-width: 100%
+    flex: 0 0 100%
+    margin-bottom: 32px
   .noUi-horizontal
     height: 6px
     .noUi-handle
@@ -162,10 +203,14 @@
     &__text
       font-size: 18px
       color: #ffffff
+      @media(max-width: 991px)
+        margin-right: 20px
     &__percents
       color: #ffffff
       font-size: 18px
       font-weight: 600
+      @media(max-width: 991px)
+        white-space: nowrap
 .attach-wrapper
   background-color: #ffffff
   border-radius: 3px
@@ -180,6 +225,13 @@
   border: 2px solid #3e9cdc
   box-sizing: border-box
   cursor: pointer
+  @media(max-width: 1199px)
+    max-width: 310px
+  @media(max-width: 991px)
+    max-width: 355px
+    height: 52px
+  @media(max-width: 767px)
+    margin: 0 auto
   i
     font-size: 20px
     margin-right: 17px
